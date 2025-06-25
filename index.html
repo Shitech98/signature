@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saeed AliShahbazi | Signature</title>
-  <link rel="icon" href="images/6.jpg" type="image/jpeg">
-
-
+  <link rel="icon" href="images/6.jpg" type="image/jpeg" />
   <style>
     :root {
       --primary: #0a3d62;
@@ -20,13 +18,11 @@
       --text-secondary: #555555;
       --accent-shadow: rgba(242, 198, 128, 0.3);
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html, body {
       height: 100%;
       background-color: var(--bg-light);
@@ -36,14 +32,12 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       padding: 1rem;
     }
-
     .lang-toggle {
       position: absolute;
       top: 20px;
@@ -54,7 +48,6 @@
       color: var(--primary);
       user-select: none;
     }
-
     .lang-toggle button {
       background: var(--primary);
       color: white;
@@ -67,11 +60,9 @@
       transition: background 0.3s ease;
       font-size: 0.9rem;
     }
-
     .lang-toggle button:hover {
       background: var(--primary-hover);
     }
-
     .container {
       max-width: 960px;
       background: var(--card-bg);
@@ -83,9 +74,7 @@
       padding: 40px;
       margin: 80px auto 40px auto;
       align-items: flex-start;
-      color: var(--text-primary);
     }
-
     .photo {
       flex: 1 1 260px;
       max-width: 260px;
@@ -94,12 +83,10 @@
       box-shadow: 0 8px 24px rgba(10, 61, 98, 0.25);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .photo:hover {
       transform: scale(1.04);
       box-shadow: 0 12px 32px rgba(10, 61, 98, 0.4);
     }
-
     .photo img {
       width: 100%;
       height: auto;
@@ -107,53 +94,41 @@
       object-fit: cover;
       aspect-ratio: 4 / 5;
     }
-
     .info {
       flex: 2 1 600px;
       display: flex;
       flex-direction: column;
       gap: 28px;
     }
-
     header {
       display: flex;
       align-items: center;
       gap: 20px;
     }
-
     header img.logo {
       height: 64px;
-      width: auto;
       object-fit: contain;
       border-radius: 12px;
       box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
-
     header h1 {
       font-size: 2.6rem;
       font-weight: 900;
       color: var(--primary);
       letter-spacing: 0.03em;
-      line-height: 1.1;
-      user-select: text;
     }
-
     header p {
       font-size: 1.2rem;
       font-weight: 600;
       color: var(--accent);
-      font-style: normal;
       margin-top: 4px;
-      user-select: text;
     }
     section {
       background: var(--section-bg);
       padding: 22px 28px;
       border-radius: 14px;
       box-shadow: inset 0 0 10px var(--section-shadow);
-      user-select: text;
     }
-
     section h2 {
       color: var(--primary);
       font-size: 1.5rem;
@@ -161,16 +136,12 @@
       font-weight: 700;
       border-bottom: 3px solid var(--accent);
       padding-bottom: 6px;
-      letter-spacing: 0.02em;
     }
-
     .about p {
       font-size: 1.1rem;
-      color: var(--text-primary);
       font-weight: 500;
       line-height: 1.7;
     }
-
     .skills-list {
       list-style: none;
       display: grid;
@@ -179,23 +150,17 @@
       font-weight: 600;
       color: var(--primary);
     }
-
     .skills-list li {
       background: #fff6e8;
       padding: 12px 16px;
       border-radius: 10px;
       box-shadow: 0 3px 8px var(--accent-shadow);
       transition: background 0.3s ease, color 0.3s ease;
-      user-select: none;
     }
-
     .skills-list li:hover {
       background: var(--accent);
       color: white;
-      cursor: default;
-      box-shadow: 0 4px 14px rgba(242, 153, 74, 0.6);
     }
-
     .projects-list {
       list-style-type: disc;
       padding-left: 24px;
@@ -203,58 +168,43 @@
       color: var(--text-secondary);
       font-weight: 500;
       line-height: 1.5;
-      user-select: text;
     }
-
     .projects-list li {
       margin-bottom: 12px;
     }
-
     .contact p {
       font-size: 1rem;
       margin-bottom: 10px;
-      user-select: text;
     }
-
     .contact a {
       color: var(--primary);
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.25s ease;
-      user-select: text;
     }
-
     .contact a:hover {
       text-decoration: underline;
       color: var(--primary-hover);
     }
-
     footer {
       text-align: center;
       padding: 22px 12px;
       font-size: 0.9rem;
-      color: #666666;
+      color: #666;
       font-style: italic;
       background-color: var(--card-bg);
-      user-select: none;
     }
-
     @media (max-width: 720px) {
       .container {
         flex-direction: column;
         padding: 30px 20px;
       }
-
       .photo {
         max-width: 100%;
       }
-
       header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
       }
-
       header img.logo {
         height: 48px;
       }
@@ -267,7 +217,6 @@
     <button onclick="switchLang('en')">EN</button>
     <button onclick="switchLang('fa')">FA</button>
   </div>
-
   <div class="container">
     <div class="photo">
       <img src="images/photo_2025-05-27_23-03-48.jpg" alt="Saeed AliShahbazi Portrait" />
@@ -277,48 +226,30 @@
         <img src="images/7.jpg" alt="Shitech Logo" class="logo" />
         <div>
           <h1>Saeed AliShahbazi</h1>
-          <p data-en="Backend Developer | JavaScript • Node.js • Python | Cosmic Seeker"
-             data-fa="توسعه‌دهنده بک‌اند | جاوااسکریپت • نود.جی‌اس • پایتون | جستجوگر کیهانی">
-          </p>
+          <p data-en="Backend Developer | JavaScript • Node.js • Python | Cosmic Seeker" data-fa="توسعه‌دهنده بک‌اند | جاوااسکریپت • نود.جی‌اس • پایتون | جستجوگر کیهانی"></p>
         </div>
       </header>
       <section class="about">
         <h2 data-en="About Me" data-fa="درباره من"></h2>
-        <p data-en="I am a multidimensional backend developer passionate about crafting robust, scalable applications with JavaScript, Node.js, and Python. Beyond code, I explore cosmic rhythms, psychological depth, and spiritual resonance to align my technical work with authentic selfhood and purposeful impact."
-           data-fa="من یک توسعه‌دهنده‌ی چندبُعدی بک‌اند هستم که با عشق، اپلیکیشن‌های مقیاس‌پذیر و پایدار با جاوااسکریپت، نود.جی‌اس و پایتون می‌سازم. فراتر از کد، به ریتم‌های کیهانی، عمق روان‌شناسی و هم‌نوایی معنوی می‌پردازم تا کارم با خودِ اصیل و تأثیر هدفمند هماهنگ باشد.">
-        </p>
+        <p data-en="I am a multidimensional backend developer passionate about crafting robust, scalable applications with JavaScript, Node.js, and Python. Beyond code, I explore cosmic rhythms, psychological depth, and spiritual resonance to align my technical work with authentic selfhood and purposeful impact." data-fa="من یک توسعه‌دهندهی چندبُعدی بک‌اند هستم که با عشق، اپلیکیشن‌های مقیاس‌پذیر و پایدار با جاوااسکریپت، نود.جی‌اس و پایتون می‌سازم..."></p>
       </section>
-
       <section class="skills">
         <h2 data-en="Skills" data-fa="مهارت‌ها"></h2>
-        <ul class="skills-list" aria-label="Skills list">
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>Python</li>
-          <li>REST APIs</li>
-          <li>SQL & NoSQL</li>
-          <li>Git & GitHub</li>
-          <li>Linux & Shell</li>
-          <li>Unit Testing</li>
-          <li>English (IELTS Advanced)</li>
-          <li>Spiritual Philosophy</li>
-          <li>Jungian Psychology</li>
-          <li>Cosmic Cosmology</li>
+        <ul class="skills-list">
+          <li>JavaScript</li><li>Node.js</li><li>Python</li><li>REST APIs</li><li>SQL & NoSQL</li><li>Git & GitHub</li><li>Linux & Shell</li><li>Unit Testing</li><li>English (IELTS Advanced)</li><li>Spiritual Philosophy</li><li>Jungian Psychology</li><li>Cosmic Cosmology</li>
         </ul>
       </section>
-
       <section class="projects">
         <h2 data-en="Projects" data-fa="پروژه‌ها"></h2>
-        <ul class="projects-list" aria-label="Projects list">
+        <ul class="projects-list">
           <li data-en="Backend API for mental health platform" data-fa="ایجاد API بک‌اند برای پلتفرم سلامت روان"></li>
-       <li><a href="https://www.dr-rezvani-vet.ir" target="_blank" style="color: inherit; text-decoration: underline;"
-     data-en="Personal website dr-rezvani-vet.ir development"
-     data-fa="توسعه سایت شخصی dr-rezvani-vet.ir">
-    توسعه سایت شخصی dr-rezvani-vet.ir </a></li>
+          <li data-en="Personal website development at " data-fa="توسعه سایت dr-rezvani-vet.ir">
+            <span data-en="Personal website development at "></span>
+            <a href="https://www.dr-rezvani-vet.ir" target="_blank" style="color: inherit; text-decoration: underline;">dr-rezvani-vet.ir</a>
+          </li>
           <li data-en="Cosmic rhythm inspired automation scripts" data-fa="اسکریپت‌های خودکارسازی با الهام از ریتم کیهانی"></li>
         </ul>
       </section>
-
       <section class="contact">
         <h2 data-en="Contact Me" data-fa="ارتباط با من"></h2>
         <p>Email: <a href="mailto:saeed.shahbazi98@gmail.com">saeed.shahbazi98@gmail.com</a></p>
@@ -330,12 +261,10 @@
       </section>
     </div>
   </div>
-
   <footer>
     <img src="images/9.jpg" alt="Shitech Icon Logo" style="height: 28px; vertical-align: middle; margin-right: 8px;" />
     &copy; 2025 Saeed AliShahbazi. All rights reserved.
   </footer>
-
   <script>
     const elements = document.querySelectorAll('[data-en]');
     function switchLang(lang) {
