@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
   <title>Saeed AliShahbazi | Signature</title>
-  <link rel="icon" href="images/6.jpg" type="image/jpeg">
+  <link rel="icon" href="images/3.jpg" type="image/jpeg" />
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Multidimensional backend developer crafting scalable apps with JavaScript, Node.js, Python. Cosmic seeker aligning tech with authentic selfhood." />
+  <meta property="og:title" content="Saeed AliShahbazi | Backend Developer & Cosmic Seeker" />
+  <meta property="og:description" content="Building scalable backend solutions with a cosmic and psychological vision." />
+  <meta property="og:image" content="https://yourdomain.ir/images/photo_2025-05-27_23-03-48.jpg" />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     :root {
       --primary: #0a3d62;
@@ -17,53 +30,79 @@
       --text-primary: #222222;
       --text-secondary: #555555;
       --accent-shadow: rgba(242, 198, 128, 0.3);
+      --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    * {
+
+    /* Reset */
+    *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     html, body {
       height: 100%;
       background-color: var(--bg-light);
       color: var(--text-primary);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: var(--font-family);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
+
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      padding: 1rem;
+      padding: 1.25rem 1.5rem;
+      position: relative;
+      background-color: var(--bg-light);
+      color: var(--text-primary);
     }
+
+    /* Language Toggle */
     .lang-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 10;
+      position: fixed;
+      top: 1.25rem;
+      right: 1.5rem;
+      z-index: 20;
       font-weight: 700;
       font-size: 0.95rem;
       color: var(--primary);
       user-select: none;
+      background: rgba(255 255 255 / 0.85);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 4px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-family);
     }
+
     .lang-toggle button {
       background: var(--primary);
       color: white;
       border: none;
-      padding: 6px 12px;
-      margin-left: 6px;
+      padding: 6px 14px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
-      transition: background 0.3s ease;
+      transition: background 0.25s ease;
       font-size: 0.9rem;
+      font-family: var(--font-family);
     }
-    .lang-toggle button:hover {
+
+    .lang-toggle button:hover,
+    .lang-toggle button:focus {
       background: var(--primary-hover);
+      outline: none;
     }
-    .container {
+
+    /* Container */
+    main.container {
       max-width: 960px;
       background: var(--card-bg);
       border-radius: 16px;
@@ -71,11 +110,14 @@
       display: flex;
       flex-wrap: wrap;
       gap: 36px;
-      padding: 40px;
-      margin: 80px auto 40px auto;
+      padding: 40px 48px;
+      margin: 80px auto 40px;
       align-items: flex-start;
       color: var(--text-primary);
+      user-select: text;
     }
+
+    /* Photo */
     .photo {
       flex: 1 1 260px;
       max-width: 260px;
@@ -84,28 +126,39 @@
       box-shadow: 0 8px 24px rgba(10, 61, 98, 0.25);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .photo:hover {
+
+    .photo:hover,
+    .photo:focus-within {
       transform: scale(1.04);
       box-shadow: 0 12px 32px rgba(10, 61, 98, 0.4);
+      outline: none;
     }
+
     .photo img {
       width: 100%;
       height: auto;
       display: block;
       object-fit: cover;
       aspect-ratio: 4 / 5;
+      border-radius: 16px;
     }
+
+    /* Info */
     .info {
       flex: 2 1 600px;
       display: flex;
       flex-direction: column;
       gap: 28px;
     }
+
+    /* Header */
     header {
       display: flex;
       align-items: center;
       gap: 20px;
+      user-select: text;
     }
+
     header img.logo {
       height: 64px;
       width: auto;
@@ -113,6 +166,7 @@
       border-radius: 12px;
       box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
+
     header h1 {
       font-size: 2.6rem;
       font-weight: 900;
@@ -121,14 +175,17 @@
       line-height: 1.1;
       user-select: text;
     }
+
     header p {
       font-size: 1.2rem;
       font-weight: 600;
       color: var(--accent);
-      font-style: normal;
       margin-top: 4px;
       user-select: text;
+      white-space: nowrap;
     }
+
+    /* Sections */
     section {
       background: var(--section-bg);
       padding: 22px 28px;
@@ -136,6 +193,7 @@
       box-shadow: inset 0 0 10px var(--section-shadow);
       user-select: text;
     }
+
     section h2 {
       color: var(--primary);
       font-size: 1.5rem;
@@ -144,13 +202,19 @@
       border-bottom: 3px solid var(--accent);
       padding-bottom: 6px;
       letter-spacing: 0.02em;
+      user-select: text;
     }
+
+    /* About */
     .about p {
       font-size: 1.1rem;
       color: var(--text-primary);
       font-weight: 500;
       line-height: 1.7;
+      user-select: text;
     }
+
+    /* Skills */
     .skills-list {
       list-style: none;
       display: grid;
@@ -158,21 +222,28 @@
       gap: 12px 22px;
       font-weight: 600;
       color: var(--primary);
+      user-select: none;
     }
+
     .skills-list li {
       background: #fff6e8;
       padding: 12px 16px;
       border-radius: 10px;
       box-shadow: 0 3px 8px var(--accent-shadow);
-      transition: background 0.3s ease, color 0.3s ease;
-      user-select: none;
+      transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      cursor: default;
     }
-    .skills-list li:hover {
+
+    .skills-list li:hover,
+    .skills-list li:focus {
       background: var(--accent);
       color: white;
-      cursor: default;
       box-shadow: 0 4px 14px rgba(242, 153, 74, 0.6);
+      transform: scale(1.03);
+      outline: none;
     }
+
+    /* Projects */
     .projects-list {
       list-style-type: disc;
       padding-left: 24px;
@@ -182,22 +253,30 @@
       line-height: 1.5;
       user-select: text;
     }
+
     .projects-list li {
       margin-bottom: 12px;
     }
-    .projects-list li span.link {
-      color: inherit;
-      text-decoration: none;
-    }
+
     .projects-list li span.link a {
       text-decoration: underline;
       color: inherit;
+      transition: color 0.25s ease;
     }
+
+    .projects-list li span.link a:hover,
+    .projects-list li span.link a:focus {
+      color: var(--primary-hover);
+      outline: none;
+    }
+
+    /* Contact */
     .contact p {
       font-size: 1rem;
       margin-bottom: 10px;
       user-select: text;
     }
+
     .contact a {
       color: var(--primary);
       text-decoration: none;
@@ -205,10 +284,15 @@
       transition: color 0.25s ease;
       user-select: text;
     }
-    .contact a:hover {
+
+    .contact a:hover,
+    .contact a:focus {
       text-decoration: underline;
       color: var(--primary-hover);
+      outline: none;
     }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 22px 12px;
@@ -217,36 +301,80 @@
       font-style: italic;
       background-color: var(--card-bg);
       user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
     }
+
+    footer img {
+      height: 28px;
+      vertical-align: middle;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
     @media (max-width: 720px) {
-      .container {
+      main.container {
         flex-direction: column;
         padding: 30px 20px;
       }
+
       .photo {
         max-width: 100%;
+        margin: 0 auto;
       }
+
       header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
       }
+
       header img.logo {
         height: 48px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .lang-toggle {
+        top: 0.75rem;
+        right: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0.75rem 1rem;
+      }
+
+      main.container {
+        padding: 20px 14px;
+        gap: 24px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="lang-toggle">
+  <div class="lang-toggle" role="region" aria-label="Language selection">
     <span>Language:</span>
-    <button onclick="switchLang('en')">EN</button>
-    <button onclick="switchLang('fa')">FA</button>
+    <button type="button" aria-pressed="true" aria-label="Switch to English" id="btn-en">EN</button>
+    <button type="button" aria-pressed="false" aria-label="Switch to Persian" id="btn-fa">FA</button>
   </div>
-  <div class="container">
-    <div class="photo">
-      <img src="images/photo_2025-05-27_23-03-48.jpg" alt="Saeed AliShahbazi Portrait" />
+
+  <main class="container" aria-label="Saeed AliShahbazi personal signature and profile">
+    <div class="photo" tabindex="0">
+      <img src="images/photo_2025-05-27_23-03-48.jpg" alt="Portrait of Saeed AliShahbazi" />
     </div>
+
     <div class="info">
       <header>
         <img src="images/7.jpg" alt="Shitech Logo" class="logo" />
@@ -255,20 +383,22 @@
           <p data-en="Backend Developer | JavaScript • Node.js • Python | Cosmic Seeker" data-fa="توسعه‌دهنده بک‌اند | جاوااسکریپت • نود.جی‌اس • پایتون | جستجوگر کیهانی"></p>
         </div>
       </header>
-      <section class="about">
-        <h2 data-en="About Me" data-fa="درباره من"></h2>
+
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title" data-en="About Me" data-fa="درباره من"></h2>
         <p data-en="I am a multidimensional backend developer passionate about crafting robust, scalable applications with JavaScript, Node.js, and Python. Beyond code, I explore cosmic rhythms, psychological depth, and spiritual resonance to align my technical work with authentic selfhood and purposeful impact." data-fa="من یک توسعه‌دهنده‌ی چندبُعدی بک‌اند هستم که با عشق، اپلیکیشن‌های مقیاس‌پذیر و پایدار با جاوااسکریپت، نود.جی‌اس و پایتون می‌سازم. فراتر از کد، به ریتم‌های کیهانی، عمق روان‌شناسی و هم‌نوایی معنوی می‌پردازم تا کارم با خودِ اصیل و تأثیر هدفمند هماهنگ باشد."></p>
       </section>
-      <section class="skills">
-        <h2 data-en="Skills" data-fa="مهارت‌ها"></h2>
+
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title" data-en="Skills" data-fa="مهارت‌ها"></h2>
         <ul class="skills-list" aria-label="Skills list">
           <li>JavaScript</li>
           <li>Node.js</li>
           <li>Python</li>
           <li>REST APIs</li>
-          <li>SQL & NoSQL</li>
-          <li>Git & GitHub</li>
-          <li>Linux & Shell</li>
+          <li>SQL &amp; NoSQL</li>
+          <li>Git &amp; GitHub</li>
+          <li>Linux &amp; Shell</li>
           <li>Unit Testing</li>
           <li>English (IELTS Advanced)</li>
           <li>Spiritual Philosophy</li>
@@ -276,43 +406,69 @@
           <li>Cosmic Cosmology</li>
         </ul>
       </section>
-      <section class="projects">
-        <h2 data-en="Projects" data-fa="پروژه‌ها"></h2>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title" data-en="Projects" data-fa="پروژه‌ها"></h2>
         <ul class="projects-list" aria-label="Projects list">
           <li data-en="Backend API for mental health platform" data-fa="ایجاد API بک‌اند برای پلتفرم سلامت روان"></li>
-          <li data-en="Personal website <span class='link'><a href='https://www.dr-rezvani-vet.ir' target='_blank'>dr-rezvani-vet.ir</a></span> development" data-fa="توسعه سایت شخصی <span class='link'><a href='https://www.dr-rezvani-vet.ir' target='_blank'>dr-rezvani-vet.ir</a></span>">Personal website <span class="link"><a href="https://www.dr-rezvani-vet.ir" target="_blank">dr-rezvani-vet.ir</a></span> development</li>
+          <li data-en="Personal website <span class='link'><a href='https://www.dr-rezvani-vet.ir' target='_blank' rel='noopener noreferrer'>dr-rezvani-vet.ir</a></span> development" data-fa="توسعه سایت شخصی <span class='link'><a href='https://www.dr-rezvani-vet.ir' target='_blank' rel='noopener noreferrer'>dr-rezvani-vet.ir</a></span>"></li>
           <li data-en="Cosmic rhythm inspired automation scripts" data-fa="اسکریپت‌های خودکارسازی با الهام از ریتم کیهانی"></li>
         </ul>
       </section>
-      <section class="contact">
-        <h2 data-en="Contact Me" data-fa="ارتباط با من"></h2>
-        <p>Email: <a href="mailto:saeed.shahbazi98@gmail.com">saeed.shahbazi98@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Shitech98" target="_blank">github.com/Shitech98</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/saeed-shahbazi98" target="_blank">linkedin.com/in/saeed-shahbazi98</a></p>
-        <p>LaborX: <a href="https://laborx.com/freelancers/users/id366682" target="_blank">laborx.com/freelancers/saeed-alishahbazi</a></p>
-        <p>Telegram: <a href="https://t.me/shitech" target="_blank">@shitech</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/_.saeedshahbazi._" target="_blank">@_.saeedshahbazi._</a></p>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-en="Contact Me" data-fa="ارتباط با من"></h2>
+        <address>
+          <p>Email: <a href="mailto:saeed.shahbazi98@gmail.com" target="_blank" rel="noopener noreferrer">saeed.shahbazi98@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/Shitech98" target="_blank" rel="noopener noreferrer">github.com/Shitech98</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/saeed-shahbazi98" target="_blank" rel="noopener noreferrer">linkedin.com/in/saeed-shahbazi98</a></p>
+          <p>LaborX: <a href="https://laborx.com/freelancers/users/id366682" target="_blank" rel="noopener noreferrer">laborx.com/freelancers/saeed-alishahbazi</a></p>
+          <p>Telegram: <a href="https://t.me/shitech" target="_blank" rel="noopener noreferrer">@shitech</a></p>
+          <p>Instagram: 
+            <a href="https://www.instagram.com/realsaeedshahbazi" target="_blank" rel="noopener noreferrer" data-en="@realsaeedshahbazi" data-fa="@realsaeedshahbazi">@realsaeedshahbazi</a>
+          </p>
+        </address>
       </section>
     </div>
-  </div>
-  <footer>
-    <img src="images/7.jpg" alt="Shitech Icon Logo" style="height: 28px; vertical-align: middle; margin-right: 8px;" />
-    &copy; 2025 Saeed AliShahbazi. All rights reserved.
+  </main>
+
+  <footer role="contentinfo">
+    <img src="images/7.jpg" alt="Shitech Icon Logo" />
+    <span>&copy; 2025 Saeed AliShahbazi. All rights reserved.</span>
   </footer>
+
   <script>
-    const elements = document.querySelectorAll('[data-en]');
-    function switchLang(lang) {
-      elements.forEach(el => {
-        if (lang === 'fa') {
-          el.innerHTML = el.getAttribute('data-fa');
-          document.documentElement.dir = 'rtl';
-        } else {
-          el.innerHTML = el.getAttribute('data-en');
-          document.documentElement.dir = 'ltr';
-        }
-      });
-    }
-    switchLang('en');
+    (() => {
+      const elements = document.querySelectorAll('[data-en]');
+      const btnEn = document.getElementById('btn-en');
+      const btnFa = document.getElementById('btn-fa');
+
+      function switchLang(lang) {
+        elements.forEach(el => {
+          if (lang === 'fa') {
+            el.innerHTML = el.getAttribute('data-fa');
+            document.documentElement.lang = 'fa';
+            document.documentElement.dir = 'rtl';
+            btnEn.setAttribute('aria-pressed', 'false');
+            btnFa.setAttribute('aria-pressed', 'true');
+            document.title = "سعید علی‌شهبازی | امضا";
+          } else {
+            el.innerHTML = el.getAttribute('data-en');
+            document.documentElement.lang = 'en';
+            document.documentElement.dir = 'ltr';
+            btnEn.setAttribute('aria-pressed', 'true');
+            btnFa.setAttribute('aria-pressed', 'false');
+            document.title = "Saeed AliShahbazi | Signature";
+          }
+        });
+      }
+
+      btnEn.addEventListener('click', () => switchLang('en'));
+      btnFa.addEventListener('click', () => switchLang('fa'));
+
+      // Initialize with English
+      switchLang('en');
+    })();
   </script>
 </body>
 </html>
